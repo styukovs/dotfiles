@@ -19,3 +19,5 @@ PS1='\[$blue\]\w\[$reset\]$(__git_ps1 " (%s)") \$ '
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"
+
+. "$HOME/.local/bin/env"
