@@ -1,0 +1,67 @@
+{
+  "layer": "bot",
+  "spacing": 0,
+  "height": 0,
+  "margin-bottom": -16,
+  "margin-top": 0,
+  "position": "top",
+  "margin-right": 32,
+  "margin-left": 32,
+  "modules-left": [
+    "hyprland/workspaces",
+    "sway/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "cpu",
+    "memory",
+    "network",
+    "battery",
+    "backlight",
+    "pulseaudio",
+    "sway/language"
+  ],
+  "clock": {
+    "format": "{:%d.%m %H:%M}"
+  },
+  "cpu": {
+    "format": "󰘚 {usage}%",
+    "interval": 3
+  },
+  "memory": {
+    "format": "󰍛 {percentage}%",
+    "interval": 3
+  },
+  "network": {
+    "format-wifi": "  {bandwidthDownBytes}",
+    "format-ethernet": "  {bandwidthDownBytes}",
+    "format-disconnected": "󰤮  No Network",
+    "interval": 3
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": ["󱊡", "󱊢", "󱊣"]
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"]
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-icons": ["", "", ""],
+    "nospacing": 1,
+    "format-muted": "",
+    "on-click": "pavucontrol",
+    "tooltip": false
+  }
+}
