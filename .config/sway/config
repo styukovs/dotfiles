@@ -32,9 +32,10 @@ default_floating_border pixel 2px
 
 # The border colors:
 #                         border    bg        text      ind       child border
-client.focused            #a7c080   #3c4841   #a7c080   #a7c080   #a7c080
-client.focused_inactive   #3c4841   #3c4841   #a7c080   #3c4841   #3c4841
-client.unfocused          #3c4841   #3c4841   #a7c080   #3c4841   #3c4841
+client.focused            #a7c080   #2e383c   #a7c080   #a7c080   #a7c080
+client.focused_inactive   #3c4841   #2e383c   #a7c080   #3c4841   #3c4841
+client.unfocused          #3c4841   #2e383c   #a7c080   #3c4841   #3c4841
+client.urgent             #493b40   #e67e80   #493b40   #493b40   #493b40
 
 # =================================================================
 
