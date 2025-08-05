@@ -15,14 +15,14 @@
     "clock"
   ],
   "modules-right": [
-    "tray",
     "cpu",
     "memory",
     "network",
-    "battery",
     "backlight",
     "pulseaudio",
-    "sway/language"
+    "sway/language",
+    "battery",
+    "tray"
   ],
   "clock": {
     "format": "{:%d.%m %H:%M}"
