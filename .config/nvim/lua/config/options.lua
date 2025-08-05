@@ -6,7 +6,7 @@ vim.opt.scrolloff = 10
 vim.opt.colorcolumn = "120"
 
 -- Indentation
-local indent = 4
+local indent = 2
 vim.opt.autoindent = true
 vim.opt.breakindent = true
 vim.opt.copyindent = true
