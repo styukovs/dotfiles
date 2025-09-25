@@ -4,6 +4,7 @@ vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes" -- Always show sign column
 vim.opt.scrolloff = 10
 vim.opt.colorcolumn = "120"
+vim.opt.cursorline = true
 
 -- Indentation
 local indent = 2
