@@ -17,6 +17,8 @@ set $lock swaylock
 output eDP-1 resolution 1920x1200 position 0,0
 # =================================================================
 
+for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
+
 # ===================== WALLPAPER =================================
 output * bg "/home/styukovs/Pictures/wallpapers/.wallpaper" fill
 # =================================================================
