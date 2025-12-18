@@ -70,7 +70,7 @@ bar {
 # grim, slurp, and swappy. Feel free to use a different screenshot
 # solution.
 
-#bindsym $mod+Shift+s exec "QT_QPA_PLATFORM=xcb flameshot gui"
+bindsym $mod+Shift+s exec "flameshot gui"
 #bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 # =================================================================
 
