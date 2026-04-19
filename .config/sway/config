@@ -71,6 +71,7 @@ bar {
 # solution.
 
 bindsym $mod+Shift+s exec "flameshot gui"
+bindsym $mod+Shift+z exec "wooz --invert-scroll"
 #bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 # =================================================================
 
