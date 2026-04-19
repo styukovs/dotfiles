@@ -24,3 +24,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
   desc = 'LSP: Disable hover capability from Ruff',
 })
+
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+  callback = function()
+    local buf = vim.api.nvim_get_current_buf()
+    local lang = vim.treesitter.language.get_lang(vim.bo.filetype)
+    if lang then
+      pcall(vim.treesitter.start, buf, lang)
+      vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    end
+  end,
+})
