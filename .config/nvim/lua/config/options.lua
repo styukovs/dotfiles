@@ -7,7 +7,7 @@ vim.opt.colorcolumn = "120"
 vim.opt.cursorline = true
 
 -- Indentation
-local indent = 2
+local indent = 4
 vim.opt.autoindent = true
 vim.opt.breakindent = true
 vim.opt.copyindent = true
