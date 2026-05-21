@@ -34,7 +34,18 @@ return {
     },
 
     -- (Default) Only show the documentation popup when manually triggered
-    completion = { documentation = { auto_show = false } },
+    completion = {
+      documentation = { auto_show = false },
+      trigger = {
+        prefetch_on_insert = false,
+        show_on_keyword = false,
+        show_on_trigger_character = false,
+        show_on_backspace_after_accept = false,
+        show_on_backspace_after_insert_enter = false,
+        show_on_accept_on_trigger_character = false,
+        show_on_insert_on_trigger_character = false,
+      },
+    },
 
     -- Default list of enabled providers defined so that you can extend it
     -- elsewhere in your config, without redefining it, due to `opts_extend`
